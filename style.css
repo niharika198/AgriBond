@@ -228,3 +228,51 @@ footer p {
 footer .social-media img {
    height:40px;
 }
+/* FAQs */
+   /* FAQ section with white background */
+   .faq-section {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.faq-toggle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 20px 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.faq-item.active {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}

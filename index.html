@@ -81,6 +81,92 @@
            
         </div>
     </div>
+     <!-- FAQ Section -->
+     <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How does AgriBond work for farmers?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Farmers can create detailed profiles showcasing their land, crops, and investment needs. Our platform connects you with potential investors, provides AI-powered farming insights, and ensures transparent profit sharing once harvest season arrives.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What benefits do investors get from AgriBond?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Investors gain access to a diversified agricultural portfolio with real-time progress tracking, AI-driven recommendations, and secure profit distribution. You can invest in multiple farms while monitoring growth and returns through our intuitive dashboard.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How does the AI technology benefit farming?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Our AI technology analyzes soil conditions, weather patterns, and crop health to provide actionable insights. It helps detect pests and diseases early, optimizes resource usage, and predicts harvest yields, ultimately increasing productivity and reducing risks.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How secure are transactions on AgriBond?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>All transactions on AgriBond are protected with end-to-end encryption and processed through trusted payment gateways. We use smart contracts to ensure transparent profit distribution and maintain a complete audit trail of all financial activities.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What types of crops can be funded through AgriBond?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>AgriBond supports a wide range of crops including cereals, pulses, vegetables, fruits, cash crops, and specialty crops. Our platform is designed to accommodate different growing seasons, farming methods, and regional specialties.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How is profit shared between farmers and investors?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Profit sharing is determined by the agreement established at the beginning of each investment cycle. Typically, after harvest and sale, proceeds are distributed according to the pre-agreed percentage split, with complete transparency through our secure platform.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What happens if a crop fails?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>AgriBond works with insurance partners to mitigate risks from natural disasters and crop failures. Additionally, our AI forecasting helps prevent many common causes of crop failure. Risk management details are clearly outlined in each investment agreement.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I communicate directly with farmers/investors?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, AgriBond features a secure messaging system that allows direct communication between farmers and investors. You can exchange messages, make video calls, and receive real-time notifications about important updates or decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
     <footer>
         <div class="social-media">
             <a href="#"><img src="photos/facebook-brands-solid (1).svg"></a>
@@ -94,5 +180,36 @@
     </div>
     <script src="script.js"></script>
     <script src="SignUp.js"></script>
+    <!-- Add this script for FAQ toggle functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const toggle = item.querySelector('.faq-toggle');
+                const answer = item.querySelector('.faq-answer');
+                
+                question.addEventListener('click', () => {
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('.faq-answer').style.display = 'none';
+                            otherItem.querySelector('.faq-toggle').textContent = '+';
+                        }
+                    });
+                    
+                    item.classList.toggle('active');
+                    if (item.classList.contains('active')) {
+                        answer.style.display = 'block';
+                        toggle.textContent = '−';
+                    } else {
+                        answer.style.display = 'none';
+                        toggle.textContent = '+';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
