@@ -3,11 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan Your Trip | Explore India</title>
+    <title>Farmer Profiles - Agriculture Connect</title>
     <link rel="stylesheet" href="Farmer_Profile.css">
-    
 </head>
 <body>
+    <header>
+        <div class="header-container">
+            <div class="logo">AgriConnect</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Farmers</a></li>
+                    <li><a href="#">Invest</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <div class="container">
+        <h1 class="page-title">Farmer Profiles</h1>
+
+        <div class="search-filter">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" placeholder="Search farmers...">
+            </div>
+            <div class="filter-options">
+                <select class="filter-select" id="location-filter">
+                    <option value="">All Locations</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Punjab">Punjab</option>
+                </select>
+                <select class="filter-select" id="crop-filter">
+                    <option value="">All Crops</option>
+                    <option value="Wheat">Wheat</option>
+                    <option value="Corn">Corn</option>
+                    <option value="Rice">Rice</option>
+                    <option value="Sugarcane">Sugarcane</option>
+                    <option value="Olives">Olives</option>
+                    <option value="Grapes">Grapes</option>
+                </select>
+                <select class="filter-select" id="investment-filter">
+                    <option value="">Investment Range</option>
+                    <option value="low">Under 5000/-</option>
+                    <option value="medium">5000/- - 7000/-</option>
+                    <option value="high">Above 7000/-</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="profiles-grid" id="profiles-container">
+            <!-- Profiles will be inserted here by JavaScript -->
+        </div>
+
+        <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">Next</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">AgriConnect</h3>
+                <p>Connecting investors with farmers for sustainable agriculture growth.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Farmer Profiles</a></li>
+                    <li><a href="#">Investment Opportunities</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Farming Guides</a></li>
+                    <li><a href="#">Investment Tips</a></li>
+                    <li><a href="#">Success Stories</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Contact</h3>
+                <ul class="footer-links">
+                    <li>Email: info@agriconnect.com</li>
+                    <li>Phone: +1 (555) 123-4567</li>
+                    <li>Address: 123 Farm Road, Agritown</li>
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; 2025 AgriConnect. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="Farmer_profile.js"></script>
 </body>
 </html>
