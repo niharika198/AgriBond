@@ -22,3 +22,13 @@ overlay.addEventListener("click", (event) => {
         document.querySelector(".modal").classList.remove("active");
     }
 });
+document.getElementById("farmerBtn").addEventListener("click", function() {
+    document.getElementsById("profile-container").classList.add("hidden");  // Hide profiles
+    document.getElementById("farmerForm").style.display = "flex"; // Show form
+});
+
+// Close button - Brings back profiles
+document.getElementById("closeBtn").addEventListener("click", function() {
+    document.getElementsById("profile-container").classList.remove("hidden"); // Show profiles
+    document.getElementById("farmerForm").style.display = "none";  // Hide form
+});
