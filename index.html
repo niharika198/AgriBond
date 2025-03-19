@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgriBond</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="SignUp.css">
 </head>
 <body>
     <header>
@@ -18,6 +19,13 @@
                     <li><button><a href="#">Home</a></button></li>
                     <li><button><a href="#">Crops</a></button></li>
                     <li><button><a href="#">Contact Us</a></button></li>
+                    <li><button id="signupBtn"><a href="#">Sign Up</a></button></li>
+                    <div id="overlay" class="overlay">
+                        <div class="modal">
+                            <span class="close">&times;</span>
+                            <div id="profile"></div>
+                        </div>
+                    </div>
                 </ul>
             </div>
             <div class="hamburger">
@@ -85,5 +93,6 @@
     </footer>
     </div>
     <script src="script.js"></script>
+    <script src="SignUp.js"></script>
 </body>
 </html>
